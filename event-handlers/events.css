@@ -1,0 +1,35 @@
+section:first-child {
+  font-weight: bold;
+}
+
+section:last-child {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#output-target {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+}
+
+.make-large {
+  font-size: 2em;
+}
+
+.add-border {
+  border: 1px solid #000;
+}
+
+.add-rounding {
+  border-radius: 12px;
+}
+
+button {
+  display: block;
+  width: 120px;
+  margin: 10px 0;
+}

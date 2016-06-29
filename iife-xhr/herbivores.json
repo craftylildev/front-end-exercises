@@ -1,0 +1,19 @@
+{
+  "herbivores": [
+    {
+      "name": "Rabbit"
+    },
+    {
+      "name": "Deer"
+    },
+    {
+      "name": "Cow"
+    },
+    {
+      "name": "Mouse"
+    },
+    {
+      "name": "Horse"
+    }
+  ]
+}

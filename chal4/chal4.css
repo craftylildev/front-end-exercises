@@ -1,0 +1,201 @@
+/* Your challenge is to replicate the shapes, and the animations that you see in the animated GIF below. You must only use CSS. No JavaScript and no images. */
+
+body {
+  overflow: hidden;
+  background-color:#fff;
+  margin-top:25px;
+  padding:0;
+}
+.wrapper {
+  background-color: #2e4f4c;
+  margin:0 auto;
+  width: 700px;
+  min-height: 600px;
+}
+
+/*SHIP*/
+.wholeShip {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  z-index: 1000;
+}
+
+.frontShip {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #b02323;
+  margin-left: 84px;
+}
+
+.midShip {
+  border-top: 80px solid #b02323;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  height: 0;
+  width: 150px;
+}
+
+.tailLeft {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #fca400;
+  margin-left: 40px;
+}
+
+.tailRight {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #fca400;    
+  margin-left: 65px;
+}
+
+/*STARS*/
+.wholeStar1 {
+  position: relative;
+  -webkit-animation: falling1 5s infinite;
+  -webkit-animation-direction:normal;
+}
+  @-webkit-keyframes falling1{
+    from{
+      top:-800px;
+      left:50px;
+      -webkit-animation-timing-function: linear;
+    }
+    to{
+      top: 900px;
+      left:50px;
+      -webkit-animation-timing-function: linear;
+    }
+}
+
+.wholeStar2 {
+  position: relative;
+  -webkit-animation: falling2 8s infinite;
+  -webkit-animation-direction:normal;
+}
+  @-webkit-keyframes falling2{
+    from{
+      top:-300px;
+      left:175px;
+      -webkit-animation-timing-function: linear;
+    }
+    to{
+      top:1000px;
+      left:175px;
+      -webkit-animation-timing-function: linear;
+    }
+}
+
+.wholeStar3 {
+  position: relative;
+  -webkit-animation: falling3 6s infinite;
+  -webkit-animation-direction:normal;
+}
+  @-webkit-keyframes falling3{
+    from{
+      top:-400px;
+      left:275px;
+      -webkit-animation-timing-function: linear;
+    }
+    to{
+      top: 800px;
+      left:275px;
+      -webkit-animation-timing-function: linear;
+    }
+}
+
+.wholeStar4 {
+  position: relative;
+  -webkit-animation: falling4 9s infinite;
+  -webkit-animation-direction:normal;
+}
+  @-webkit-keyframes falling4{
+    from{
+      top:-1000px;
+      left:350px;
+      -webkit-animation-timing-function: linear;
+    }
+    to{
+      top: 850px;
+      left:350px;      
+      -webkit-animation-timing-function: linear;
+    }
+}
+
+.wholeStar5 {
+  position: relative;
+  -webkit-animation: falling5 6s infinite;
+  -webkit-animation-direction:normal;
+}
+  @-webkit-keyframes falling5{
+    from{
+      top:-600px;
+      left:500px;
+      -webkit-animation-timing-function: linear;
+    }
+    to{
+      top: 800px;
+      left:500px;
+      -webkit-animation-timing-function: linear;
+    }
+}
+
+.starParts {
+  width: 0;
+  height: 0;
+  margin: 30px 0;
+  color: #fff;
+  position: relative;
+  display: block;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  border-left: 38px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+
+.starParts:before {
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: -34px;
+  border-bottom: 29px solid #fff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
+.starParts:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  display: block;
+  top: -2px;
+  left: -47px;
+  color: yellow;
+  border-right: 43px solid transparent;
+  border-bottom: 19px solid #fff;
+  border-left: 28px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+}
